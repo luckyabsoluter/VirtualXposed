@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'io.virtualapp'
     compileSdkVersion 28
 
     defaultConfig {

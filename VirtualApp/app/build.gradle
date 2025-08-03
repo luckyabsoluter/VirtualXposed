@@ -8,6 +8,7 @@ if (localProp.exists()) {
 def keyFile = file(properties.getProperty("keystore.path") ?: "/tmp/does_not_exist")
 
 android {
+    namespace 'io.virtualapp'
     signingConfigs {
         config {
             keyAlias properties.getProperty("keystore.alias")
