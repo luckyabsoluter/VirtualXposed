@@ -2,7 +2,7 @@ package io.virtualapp.abs.ui;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.IdRes;
+import androidx.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 
