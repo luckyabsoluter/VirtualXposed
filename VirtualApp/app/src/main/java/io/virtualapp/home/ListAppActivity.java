@@ -6,7 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.Toolbar;
 import android.view.MenuItem;
 import android.app.FragmentManager;
 
