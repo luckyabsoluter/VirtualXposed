@@ -448,7 +448,7 @@ class MethodProxies {
                     (String) args[1], (Integer) args[2], userId);
             Object _hostResult = method.invoke(who, args);
             if (_hostResult != null) {
-                List<ResolveInfo> hostResult = slice ? ParceledListSlice.getList.call(_hostResult)
+                List<ResolveInfo> hostResult = slice ? (List<ResolveInfo>) ParceledListSlice.getList.call(_hostResult)
                         : (List) _hostResult;
                 if (hostResult != null) {
                     Iterator<ResolveInfo> iterator = hostResult.iterator();
@@ -531,7 +531,7 @@ class MethodProxies {
                     (String) args[1], (Integer) args[2], userId);
             Object _hostResult = method.invoke(who, args);
             if (_hostResult != null) {
-                List<ResolveInfo> hostResult = slice ? ParceledListSlice.getList.call(_hostResult)
+                List<ResolveInfo> hostResult = slice ? (List<ResolveInfo>) ParceledListSlice.getList.call(_hostResult)
                         : (List) _hostResult;
                 if (hostResult != null) {
                     Iterator<ResolveInfo> iterator = hostResult.iterator();
@@ -1104,7 +1104,7 @@ class MethodProxies {
             List<ResolveInfo> appResult = VPackageManager.get().queryIntentReceivers((Intent) args[0], (String) args[1],
                     (Integer) args[2], userId);
             Object _hostResult = method.invoke(who, args);
-            List<ResolveInfo> hostResult = slice ? ParceledListSlice.getList.call(_hostResult)
+            List<ResolveInfo> hostResult = slice ? (List<ResolveInfo>) ParceledListSlice.getList.call(_hostResult)
                     : (List) _hostResult;
             if (hostResult != null) {
                 Iterator<ResolveInfo> iterator = hostResult.iterator();
@@ -1208,7 +1208,7 @@ class MethodProxies {
             List<ResolveInfo> appResult = VPackageManager.get().queryIntentContentProviders((Intent) args[0], (String) args[1],
                     (Integer) args[2], userId);
             Object _hostResult = method.invoke(who, args);
-            List<ResolveInfo> hostResult = slice ? ParceledListSlice.getList.call(_hostResult)
+            List<ResolveInfo> hostResult = slice ? (List<ResolveInfo>) ParceledListSlice.getList.call(_hostResult)
                     : (List) _hostResult;
             if (hostResult != null) {
                 Iterator<ResolveInfo> iterator = hostResult.iterator();
