@@ -2,10 +2,10 @@
 
 buildscript {
     repositories {
-//        maven {
-//            url 'https://maven.google.com/'
-//            name 'Google'
-//        }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
         mavenCentral()
         google()
     }
@@ -19,16 +19,17 @@ buildscript {
 
 allprojects {
     repositories {
-//        mavenLocal()
-//        maven {
-//            url "https://jitpack.io"
-//        }
-//        maven {
-//            url 'https://maven.google.com/'
-//            name 'Google'
-//        }
+        mavenLocal()
+        maven {
+            url "https://jitpack.io"
+        }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
         mavenCentral()
         google()
+        maven { url 'https://verve.jfrog.io/artifactory/verve-gradle-release' }
     }
 }
 
