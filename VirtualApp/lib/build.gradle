@@ -2,11 +2,13 @@ apply plugin: 'com.android.library'
 
 android {
     namespace 'com.lody.virtual'
-    compileSdkVersion 28
+    compileSdkVersion 36
+
+    buildToolsVersion "36.0.0"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 22
+        targetSdkVersion 36
         externalNativeBuild {
             ndkBuild {
                 abiFilters "arm64-v8a", "x86_64"

@@ -18,11 +18,12 @@ android {
         }
     }
 
-    compileSdkVersion 34
+    compileSdkVersion 36
+    buildToolsVersion "36.0.0"
     defaultConfig {
         applicationId "io.va.exposed64"
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 36
         versionCode 220
         versionName "0.22.0"
         multiDexEnabled false
