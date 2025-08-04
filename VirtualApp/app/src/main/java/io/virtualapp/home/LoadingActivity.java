@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.SystemClock;
 import androidx.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
+import androidx.fragment.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;

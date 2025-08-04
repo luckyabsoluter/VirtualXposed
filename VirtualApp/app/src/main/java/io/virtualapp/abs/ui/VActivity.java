@@ -3,8 +3,8 @@ package io.virtualapp.abs.ui;
 import android.app.Activity;
 import android.content.Context;
 import androidx.annotation.IdRes;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import org.jdeferred.android.AndroidDeferredManager;
 
