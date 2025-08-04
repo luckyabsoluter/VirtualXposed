@@ -27,6 +27,7 @@ allprojects {
             name 'Google'
         }
         jcenter()
+        maven { url 'https://verve.jfrog.io/artifactory/verve-gradle-release' }
     }
 }
 
