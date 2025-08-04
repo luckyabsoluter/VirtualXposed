@@ -31,6 +31,9 @@ ifeq ($(TOOLCHAIN_PERMISSIVE),true)
 endif
 LOCAL_CFLAGS += -DHAVE_POSIX_CLOCKS
 
+LOCAL_CFLAGS += -Wno-vla -Wno-error=vla
+LOCAL_CPPFLAGS += -Wno-vla-cxx-extension -Wno-error=vla-cxx-extension
+
 CXX11_FLAGS := -std=gnu++11
 LOCAL_CFLAGS += $(CXX11_FLAGS)
 

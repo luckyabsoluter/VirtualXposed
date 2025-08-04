@@ -6,6 +6,9 @@ LOCAL_MODULE := va++
 LOCAL_CFLAGS := -Wno-error=format-security -fpermissive -DLOG_TAG=\"VA++\"
 LOCAL_CFLAGS += -fno-rtti -fno-exceptions
 
+LOCAL_CFLAGS += -Wno-vla -Wno-error=vla
+LOCAL_CPPFLAGS += -Wno-vla-cxx-extension -Wno-error=vla-cxx-extension
+
 LOCAL_C_INCLUDES += $(MAIN_LOCAL_PATH)
 LOCAL_C_INCLUDES += $(MAIN_LOCAL_PATH)/Foundation
 LOCAL_C_INCLUDES += $(MAIN_LOCAL_PATH)/Jni
