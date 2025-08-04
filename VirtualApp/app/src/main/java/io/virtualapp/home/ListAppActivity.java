@@ -8,6 +8,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.app.FragmentManager;
 
 import io.virtualapp.R;
 import io.virtualapp.VCommends;
@@ -35,7 +36,7 @@ public class ListAppActivity extends VActivity {
         mToolBar = findViewById(R.id.clone_app_tool_bar);
         mTabLayout = mToolBar.findViewById(R.id.clone_app_tab_layout);
         mViewPager = findViewById(R.id.clone_app_view_pager);
-        mViewPager.setAdapter(new AppPagerAdapter(getSupportFragmentManager()));
+        mViewPager.setAdapter(new AppPagerAdapter(getFragmentManager()));
         mTabLayout.setupWithViewPager(mViewPager);
 
     }

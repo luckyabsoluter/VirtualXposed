@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 
 import org.jdeferred.android.AndroidDeferredManager;
 
@@ -13,7 +13,7 @@ import io.virtualapp.abs.BaseView;
 /**
  * @author Lody
  */
-public class VActivity extends AppCompatActivity {
+public class VActivity extends Activity {
 
     /**
      * Implement of {@link BaseView#getActivity()}
@@ -34,11 +34,11 @@ public class VActivity extends AppCompatActivity {
     }
 
     public Fragment findFragmentById(@IdRes int id) {
-        return getSupportFragmentManager().findFragmentById(id);
+        return getFragmentManager().findFragmentById(id);
     }
 
     public void replaceFragment(@IdRes int id, Fragment fragment) {
-        getSupportFragmentManager().beginTransaction().replace(id, fragment).commit();
+        getFragmentManager().beginTransaction().replace(id, fragment).commit();
     }
 
     @Override

@@ -28,7 +28,9 @@
 
         <activity
             android:name=".splash.SplashActivity"
+            tools:node="replace"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,13 +40,17 @@
 
         <activity
             android:name=".home.ListAppActivity"
+            tools:node="replace"
             android:screenOrientation="portrait"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <activity
             android:name=".home.LoadingActivity"
+            tools:node="replace"
             android:excludeFromRecents="true"
             android:noHistory="true"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:taskAffinity="va.task.loading"
             android:theme="@style/TransparentTheme" />
@@ -52,14 +58,18 @@
         <activity
             android:name=".settings.AboutActivity"
             android:screenOrientation="portrait"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
-        <activity android:name=".home.NewHomeActivity" />
+        <activity 
+            android:name=".home.NewHomeActivity"
+            android:exported="false" />
 
         <activity
             android:name=".settings.SettingsActivity"
             android:label="@string/settings_title"
             android:screenOrientation="portrait"
+            android:exported="false"
             android:theme="@android:style/Theme.Material.Light" />
 
 
@@ -67,18 +77,21 @@
             android:name=".settings.RecommendPluginActivity"
             android:label="@string/settings_plugin_recommend"
             android:screenOrientation="portrait"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.Light" />
 
         <activity
             android:name=".settings.AppManageActivity"
             android:label="@string/settings_app_manage_text"
             android:screenOrientation="portrait"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.Light" />
 
         <activity
             android:name=".settings.TaskManageActivity"
             android:label="@string/settings_task_manage_text"
             android:screenOrientation="portrait"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.Light" />
 
         <activity
@@ -160,6 +173,17 @@
                 <action android:name="${applicationId}.CMD" />
             </intent-filter>
         </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 
