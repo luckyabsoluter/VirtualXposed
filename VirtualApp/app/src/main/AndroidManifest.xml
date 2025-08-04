@@ -100,7 +100,8 @@
             android:label="@string/shared_to_vxp"
             android:screenOrientation="portrait"
             android:taskAffinity="${applicationId}.share"
-            android:theme="@style/Theme.AppCompat.Light.Dialog">
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
