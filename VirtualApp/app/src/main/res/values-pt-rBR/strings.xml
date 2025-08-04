@@ -91,7 +91,7 @@
     <string name="version_is_latest">A versão mais recente está instalada.</string>
     <string name="new_version_detected">Nova versão:</string>
     <string name="multi_version_tip_title">Dicas de instalação</string>
-    <string name="multi_version_tips_content">Você escolheu um aplicativo existente. Você quer instalá-lo como um aplicativo separado ou apenas atualizar o existente? \ n (versão instalada%1$s, versão selecionada:% 2 $ s)</string>
+    <string name="multi_version_tips_content">Você escolheu um aplicativo existente. Você quer instalá-lo como um aplicativo separado ou apenas atualizar o existente? \n (versão instalada%1$s, versão selecionada:%2$s)</string>
     <string name="multi_version_multi">Instale outro</string>
     <string name="multi_version_cover">Tampa</string>
     <string name="multi_version_upgrade">Atualizar</string>
